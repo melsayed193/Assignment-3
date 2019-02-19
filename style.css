@@ -20,7 +20,7 @@ img {
     height: 20em;
     border-radius: 50%;
     overflow: hidden;
-	background-image: url(images/car.png);
+	background-image: url(Images/car.png);
 	background-size: 100%;
     background-position: center;
     max-width: 100%;
