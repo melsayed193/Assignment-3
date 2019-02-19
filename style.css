@@ -2,10 +2,85 @@
 	box-sizing: content-box;
 }
 body {
-	margin: 0;
-	padding: 0;
+	color: #000000;
+    background-image: linear-gradient(#000000, white);
+    font-family: helvetica, arial, sans-serif;
+    margin: 0;
+    padding: 0px;
+    text-align: center;
+    font-size: 22px;
+    height: 100vh;
 }
 img {
 	max-width: 100%;
 	height: auto;
 }
+.car{
+		width: 30em;
+    height: 20em;
+    border-radius: 50%;
+    overflow: hidden;
+	background-image: url(images/car.png);
+	background-size: 100%;
+    background-position: center;
+    max-width: 100%;
+    margin: auto;
+    transform: scale(.5);
+    transition: transform 4s;
+
+}
+#zoom .car {
+	transform: scale(1);
+}
+
+
+.trigger{
+
+	position: fixed;
+	bottom: 2em;
+	right: 2em;
+	width: 1.5em;
+	height: 1.5em;
+	cursor:pointer;
+	padding: 0;
+	background-color: black;
+	color: white;
+	 line-height: 1.4em;
+	border-radius: 50%;
+	font-size: 1.25em;
+	text-align:center;
+	vertical-align:middle;
+} 
+.trigger:hover {
+box-shadow: 1px 1px 6px rgba(3,0,0,0.5);
+}
+
+#zoom .trigger {
+	transform: rotate(135deg);
+}
+
+.lights {
+	/*box-shadow: 10em 0 10em black inset;*/
+}
+.lights:after {
+	content: '';
+	position: absolute;
+	width: 9em;
+	height: 2em;
+	border-radius: 50%;
+	background: yellow;
+	top: 7.5em;
+	left: 6.5em;
+	filter: blur(10px);
+	opacity: 0.5;
+}
+
+
+
+
+
+div {
+    display: block;
+}
+
+
